@@ -1,30 +1,20 @@
 export const validateContactForm = (values) => {
-    const errors = {};
+  const errors = {};
 
-    if (!values.firstName) {
-        errors.firstName = 'Required';
-    } else if (values.firstName.length < 2) {
-        errors.firstName = 'Must be at least 2 characters.';
-    } else if (values.firstName.length > 15) {
-        errors.firstName = 'Must be 15 characters or less';
-    }
+  // Validate Name
+  if (!values.user_name || values.user_name.trim().split(' ').length < 2) {
+    errors.user_name = 'Please enter your full name (first and last).';
+  }
 
-    if (!values.lastName) {
-        errors.lastName = 'Required';
-    } else if (values.lastName.length < 2) {
-        errors.lastName = 'Must be at least 2 characters.';
-    } else if (values.lastName.length > 15) {
-        errors.lastName = 'Must be 15 characters or less';
-    }
+  // Validate Email
+  if (!values.user_email || !values.user_email.includes('@')) {
+    errors.user_email = 'Please enter a valid email address.';
+  }
 
-    const reg = /^\d+$/;
-    if (!reg.test(values.phoneNum)) {
-        errors.phoneNum = 'The phone number should contain only numbers.';
-    }
+  // Validate Message
+  if (!values.message || values.message.trim().length < 10) {
+    errors.message = 'Please enter a message with at least 10 characters.';
+  }
 
-    if (!values.email.includes('@')) {
-        errors.email = 'Email should contain a @';
-    }
-
-    return errors;
+  return errors;
 };
