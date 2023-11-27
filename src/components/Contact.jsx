@@ -53,7 +53,7 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-violet-600 text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 py-4">
+          <p className="text-gray-300 pt-4">
             Submit the form below or shoot me an email - f.shoaib1580@gmail.com
           </p>
         </div>
