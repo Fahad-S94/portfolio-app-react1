@@ -1,7 +1,7 @@
 import CafeBootstrap from '../assets/projects/cafe-bresil-bootstrap-cropped-page.png';
 import CafeReact from '../assets/projects/cafe-bresil-react-cropped-page.png';
 import ToDoNative from '../assets/projects/todo-app-native.jpg';
-import NextJSChatAi from '../assets/projects/NextJs-Ai-Chat.png'
+import NextJSChatAi from '../assets/projects/NextJsAiChat.png'
 
 export const data = [
   {
