@@ -1,6 +1,7 @@
 import CafeBootstrap from '../assets/projects/cafe-bresil-bootstrap-cropped-page.png';
 import CafeReact from '../assets/projects/cafe-bresil-react-cropped-page.png';
 import ToDoNative from '../assets/projects/todo-app-native.jpg';
+import NextJSChatAi from '../assets/projects/NextJs-Ai-Chat.png'
 
 export const data = [
   {
@@ -12,7 +13,7 @@ export const data = [
   },
   {
     id: 2,
-    name: 'Cafe Bresil React JS',
+    name: 'Cafe Bresil ReactJS',
     image: CafeReact,
     github: 'https://github.com/Fahad-S94/cafesite-react',
     live: '',
@@ -24,4 +25,11 @@ export const data = [
     github: 'https://github.com/Fahad-S94/to-do-app-react-native',
     live: '',
   },
+  {
+    id: 4,
+    name: 'NextJS Ai Chat',
+    image: NextJSChatAi,
+    github: 'https://github.com/Fahad-S94/nextjs-ai-chat',
+    live: '',
+  }
 ];
